@@ -15,3 +15,6 @@ J:\OOP_KP\Steganography\Steganography\obj\Debug\Decrypting.baml
 J:\OOP_KP\Steganography\Steganography\obj\Debug\Encrypting.baml
 J:\OOP_KP\Steganography\Steganography\obj\Debug\Decrypting.g.cs
 J:\OOP_KP\Steganography\Steganography\obj\Debug\Encrypting.g.cs
+J:\OOP_KP\Steganography\Steganography\bin\Debug\WriteableBitmapEx.Wpf.dll
+J:\OOP_KP\Steganography\Steganography\bin\Debug\WriteableBitmapEx.Wpf.pdb
+J:\OOP_KP\Steganography\Steganography\bin\Debug\WriteableBitmapEx.Wpf.xml

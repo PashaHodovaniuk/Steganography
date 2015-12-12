@@ -1,7 +1,7 @@
 ﻿<Window x:Name="Encrypt" x:Class="Steganography.Encrypting"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Encrypting" Height="606" Width="1011" Closed="Encrypt_Closed" WindowStartupLocation="CenterScreen" WindowStyle="ToolWindow">
+        Title="Шифровка" Height="606" Width="1011" Closed="Encrypt_Closed" WindowStartupLocation="CenterScreen" WindowStyle="ToolWindow">
     <Window.Background>
         <ImageBrush ImageSource="Image/Substrates.png"/>
     </Window.Background>
@@ -11,12 +11,12 @@
         <Button x:Name="OpenImg1" Content="Открыть картинку" HorizontalAlignment="Left" Height="46" Margin="674,54,0,0" VerticalAlignment="Top" Width="304" FontFamily="Times New Roman" FontSize="24" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF57F30E" Click="OpenImg1_Click"/>
         <Label Content="Сообщение" HorizontalAlignment="Left" Margin="674,105,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="20" Foreground="#FFFBAB00"/>
         <TextBox x:Name="TextEncr1" HorizontalAlignment="Left" Height="106" Margin="674,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="319" FontFamily="Times New Roman" HorizontalScrollBarVisibility="Visible" ScrollViewer.CanContentScroll="True" VerticalScrollBarVisibility="Visible"/>
-        <Button x:Name="AutoKey" Content="Генерация ключа" HorizontalAlignment="Left" Height="36" Margin="674,254,0,0" VerticalAlignment="Top" Width="319" FontFamily="Times New Roman" FontSize="24" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF3AFF00"/>
+        <Button x:Name="AutoKey" Content="Генерация ключа" HorizontalAlignment="Left" Height="36" Margin="674,254,0,0" VerticalAlignment="Top" Width="319" FontFamily="Times New Roman" FontSize="24" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF3AFF00" Click="AutoKey_Click"/>
         <Label Content="Ключ" HorizontalAlignment="Left" Margin="701,295,0,0" VerticalAlignment="Top" Foreground="#FFFF9700" FontFamily="Times New Roman" FontSize="20"/>
-        <TextBox x:Name="Key" HorizontalAlignment="Left" Height="36" Margin="674,328,0,0" VerticalAlignment="Top" Width="304" HorizontalScrollBarVisibility="Visible" FontFamily="Times New Roman" IsReadOnly="True"/>
+        <TextBox x:Name="Key" HorizontalAlignment="Left" Height="36" Margin="674,328,0,0" VerticalAlignment="Top" Width="304" HorizontalScrollBarVisibility="Visible" FontFamily="Times New Roman" IsReadOnly="True" />
         <Button x:Name="ClearKey" Content="Очистить" HorizontalAlignment="Left" Height="38" Margin="674,369,0,0" VerticalAlignment="Top" Width="148" FontFamily="Times New Roman" FontSize="20" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF74FF00" Click="ClearKey_Click"/>
-        <Button x:Name="SaveKey" Content="Сохранить ключ" HorizontalAlignment="Left" Height="38" Margin="829,369,0,0" VerticalAlignment="Top" Width="149" FontFamily="Times New Roman" FontSize="20" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF74FF00"/>
-        <Button x:Name="Encrpting" Content="Шифровать" HorizontalAlignment="Left" Height="45" Margin="674,419,0,0" VerticalAlignment="Top" Width="304" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Red" FontFamily="Times New Roman" FontSize="36"/>
+        <Button x:Name="SaveKey" Content="Сохранить ключ" HorizontalAlignment="Left" Height="38" Margin="829,369,0,0" VerticalAlignment="Top" Width="149" FontFamily="Times New Roman" FontSize="20" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF74FF00" Click="SaveKey_Click"/>
+        <Button x:Name="Encrpting" Content="Шифровать" HorizontalAlignment="Left" Height="45" Margin="674,419,0,0" VerticalAlignment="Top" Width="304" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Red" FontFamily="Times New Roman" FontSize="36" Click="Encrpting_Click"/>
         <Button x:Name="MainScreen" Content="Главное меню" HorizontalAlignment="Left" Height="50" Margin="674,514,0,0" VerticalAlignment="Top" Width="148" FontFamily="Times New Roman" FontSize="22" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFAEFF00" Click="MainScreen_Click"/>
         <Button x:Name="Ending" Content="Завершить" HorizontalAlignment="Left" Height="50" Margin="830,514,0,0" VerticalAlignment="Top" Width="148" FontFamily="Times New Roman" FontSize="22" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFAEFF00" Click="Ending_Click"/>
         <Rectangle x:Name="Help2" HorizontalAlignment="Left" Height="34" Margin="954,0,0,0" Stroke="Black" VerticalAlignment="Top" Width="39" RenderTransformOrigin="-0.388,0.64" Cursor="Hand">
@@ -24,7 +24,7 @@
                 <ImageBrush TileMode="Tile" ImageSource="Image/help.png"/>
             </Rectangle.Fill>
         </Rectangle>
-        <Button x:Name="SaveImg" Content="Сохранить картинку" HorizontalAlignment="Left" Margin="674,469,0,0" VerticalAlignment="Top" Width="304" Height="45" FontFamily="Times New Roman" FontSize="24" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF8BFF00"/>
+        <Button x:Name="SaveImg" Content="Сохранить картинку" HorizontalAlignment="Left" Margin="674,469,0,0" VerticalAlignment="Top" Width="304" Height="45" FontFamily="Times New Roman" FontSize="24" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF8BFF00" Click="SaveImg_Click"/>
         <Label Content="Размер файла до шифровки:" HorizontalAlignment="Left" Margin="10,23,0,0" VerticalAlignment="Top" Foreground="Red" FontFamily="Times New Roman" FontSize="20"/>
         <Label x:Name="StartSize" HorizontalAlignment="Left" Height="31" Margin="265,23,0,0" VerticalAlignment="Top" Width="65" FontFamily="Times New Roman" FontSize="20"/>
         <Label Content="После:" HorizontalAlignment="Left" Height="31" Margin="335,23,0,0" VerticalAlignment="Top" Width="74" RenderTransformOrigin="0.426,0.481" FontFamily="Times New Roman" FontSize="20" Background="{x:Null}" Foreground="Red"/>
