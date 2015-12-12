@@ -23,5 +23,12 @@ namespace Steganography
         {
             InitializeComponent();
         }
+
+        private void Window_Closed(object sender, EventArgs e)
+        {
+            MainWindow temp = new MainWindow();
+            temp.Show();
+            Decrypt.Hide();
+        }
     }
 }

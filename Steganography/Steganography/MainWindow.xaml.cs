@@ -39,6 +39,11 @@ namespace Steganography
             Win.Hide();
         }
 
+        private void Win_Closed(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
+
         
 
     }
