@@ -1,4 +1,26 @@
 ﻿<Window x:Name="Decrypt" x:Class="Steganography.Decrypting"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Дешифровка" Height="300" Width="300" Closed="Window_Closed" WindowStyle="ToolWindow"/>
+        Title="Дешифровка" Height="606" Width="1011" Closed="Decrypt_Closed" WindowStartupLocation="CenterScreen" WindowStyle="ToolWindow">
+    <Window.Background>
+        <ImageBrush ImageSource="Image/Substrates.png"/>
+    </Window.Background>
+    <Grid>
+        <Image x:Name="Img1" HorizontalAlignment="Left" Height="527" Margin="10,25,0,0" VerticalAlignment="Top" Width="659" Stretch="Fill"/>
+        <Button x:Name="OpenImg1" Content="Открыть картинку" HorizontalAlignment="Left" Height="46" Margin="674,54,0,0" VerticalAlignment="Top" Width="304" FontFamily="Times New Roman" FontSize="24" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF57F30E" Click="OpenImg1_Click"/>
+        <Button x:Name="OpenKey" Content="Загрузить ключ" HorizontalAlignment="Left" Height="46" Margin="674,105,0,0" VerticalAlignment="Top" Width="304" FontFamily="Times New Roman" FontSize="24" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF57F30E"/>
+        <Label Content="Ключ" HorizontalAlignment="Left" Margin="701,155,0,0" VerticalAlignment="Top" Foreground="#FFFF9700" FontFamily="Times New Roman" FontSize="20"/>
+        <TextBox x:Name="Key" HorizontalAlignment="Left" Height="36" Margin="674,188,0,0" VerticalAlignment="Top" Width="304" HorizontalScrollBarVisibility="Visible" FontFamily="Times New Roman" IsReadOnly="True"/>
+        <Button x:Name="Decrpting" Content="Дешифровать" HorizontalAlignment="Left" Height="45" Margin="669,247,0,0" VerticalAlignment="Top" Width="304" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Red" FontFamily="Times New Roman" FontSize="36"/>
+        <Label Content="Сообщение" HorizontalAlignment="Left" Margin="674,301,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="20" Foreground="#FFFBAB00"/>
+        <TextBox x:Name="TextDecr1" HorizontalAlignment="Left" Height="106" Margin="674,339,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="319" FontFamily="Times New Roman" HorizontalScrollBarVisibility="Visible" ScrollViewer.CanContentScroll="True" VerticalScrollBarVisibility="Visible"/>
+        <Button x:Name="MainScreen" Content="Главное меню" HorizontalAlignment="Left" Height="50" Margin="674,481,0,0" VerticalAlignment="Top" Width="148" FontFamily="Times New Roman" FontSize="22" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFAEFF00" Click="MainScreen_Click"/>
+        <Button x:Name="Ending" Content="Завершить" HorizontalAlignment="Left" Height="50" Margin="830,481,0,0" VerticalAlignment="Top" Width="148" FontFamily="Times New Roman" FontSize="22" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFAEFF00" Click="Ending_Click"/>
+        <Rectangle x:Name="Help3" HorizontalAlignment="Left" Height="34" Margin="954,0,0,0" Stroke="Black" VerticalAlignment="Top" Width="39" RenderTransformOrigin="-0.388,0.64" Cursor="Hand">
+            <Rectangle.Fill>
+                <ImageBrush TileMode="Tile" ImageSource="Image/help.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+
+    </Grid>
+</Window>

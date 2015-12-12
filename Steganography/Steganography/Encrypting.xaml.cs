@@ -26,7 +26,6 @@ namespace Steganography
         {
             InitializeComponent();
         }
-        string rFile;
 
         private void Encrypt_Closed(object sender, EventArgs e)
         {
