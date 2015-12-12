@@ -1,1 +1,17 @@
 J:\OOP_KP\Steganography\Steganography\bin\Debug\Steganography.exe.config
+J:\OOP_KP\Steganography\Steganography\bin\Debug\Steganography.exe
+J:\OOP_KP\Steganography\Steganography\bin\Debug\Steganography.pdb
+J:\OOP_KP\Steganography\Steganography\obj\Debug\Steganography.csprojResolveAssemblyReference.cache
+J:\OOP_KP\Steganography\Steganography\obj\Debug\MainWindow.baml
+J:\OOP_KP\Steganography\Steganography\obj\Debug\MainWindow.g.cs
+J:\OOP_KP\Steganography\Steganography\obj\Debug\App.g.cs
+J:\OOP_KP\Steganography\Steganography\obj\Debug\Steganography_MarkupCompile.cache
+J:\OOP_KP\Steganography\Steganography\obj\Debug\Steganography.g.resources
+J:\OOP_KP\Steganography\Steganography\obj\Debug\Steganography.Properties.Resources.resources
+J:\OOP_KP\Steganography\Steganography\obj\Debug\Steganography.csproj.GenerateResource.Cache
+J:\OOP_KP\Steganography\Steganography\obj\Debug\Steganography.exe
+J:\OOP_KP\Steganography\Steganography\obj\Debug\Steganography.pdb
+J:\OOP_KP\Steganography\Steganography\obj\Debug\Decrypting.baml
+J:\OOP_KP\Steganography\Steganography\obj\Debug\Encrypting.baml
+J:\OOP_KP\Steganography\Steganography\obj\Debug\Decrypting.g.cs
+J:\OOP_KP\Steganography\Steganography\obj\Debug\Encrypting.g.cs

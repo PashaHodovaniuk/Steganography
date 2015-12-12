@@ -24,5 +24,22 @@ namespace Steganography
         {
             InitializeComponent();
         }
+
+        private void Encrypting1_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Encrypting encr = new Encrypting();
+            encr.Show();
+            Win.Hide();
+        }
+
+        private void Decrypting1_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Decrypting dencr = new Decrypting();
+            dencr.Show();
+            Win.Hide();
+        }
+
+        
+
     }
 }
