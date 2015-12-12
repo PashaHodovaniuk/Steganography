@@ -7,7 +7,7 @@
         <Grid.Background>
             <ImageBrush x:Name="Substrates" ImageSource="Image/Substrates.png" TileMode="Tile"/>
         </Grid.Background>
-        <Rectangle HorizontalAlignment="Left" Height="57" Margin="815,0,0,0" Stroke="Black" VerticalAlignment="Top" Width="58" RenderTransformOrigin="-0.388,0.64" Cursor="Hand">
+        <Rectangle x:Name="Help1" HorizontalAlignment="Left" Height="57" Margin="815,0,0,0" Stroke="Black" VerticalAlignment="Top" Width="58" RenderTransformOrigin="-0.388,0.64" Cursor="Hand">
             <Rectangle.Fill>
                 <ImageBrush TileMode="Tile" ImageSource="Image/help.png"/>
             </Rectangle.Fill>
